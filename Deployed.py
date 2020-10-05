@@ -1,5 +1,5 @@
 import streamlit as st
-from fastai.vision import open_image, load_learner, image, torch
+from fastai.vision import load_learner, torch
 import PIL.Image
 from google_drive_downloader import GoogleDriveDownloader as gdd
 gdd.download_file_from_google_drive(file_id='1-06LhL49Ai-Bb9u0zMLccR1gYxcpLJMK',
@@ -20,6 +20,6 @@ def main():
 	else:
 	    st.success("This image does not have Oil Palm with the probability of " + str(pred_prob) + '%.')
 	    
-	    st.subheader('Developed by: Riddhi Mehta')
+	st.subheader('Developed by: Riddhi Mehta')
 if __name__=='__main__':
      main()
