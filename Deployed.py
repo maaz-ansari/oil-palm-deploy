@@ -1,7 +1,7 @@
 import streamlit as st
 import fastai
 import fastai.vision
-from fastai.vision import load_learner, torch
+from fastai.vision import *
 import PIL.Image
 from google_drive_downloader import GoogleDriveDownloader as gdd
 gdd.download_file_from_google_drive(file_id='1w3yzKhO61dJ8OiunXn_NFORNA9K2RzjT',
